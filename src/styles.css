@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+.ng-sidebar {
+  background: rgb(88, 41, 41);
+  width: 15%;
+}
+
+.ng-sidebar--right {
+  color: rgb(88, 41, 41) !important;
+  background: antiquewhite;
+  width: 15%;
+}

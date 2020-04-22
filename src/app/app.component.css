@@ -1,9 +1,9 @@
-/* .div1{
-    width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-  }  */
+
+  table {
+    width:100%; 
+    margin-top: 20px;
+    background: #fafafa;
+  }
 
   td {
     width: 350px;
@@ -35,7 +35,7 @@
   }
 
   .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;

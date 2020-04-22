@@ -1,16 +1,21 @@
 
 <!-- Container for sidebar(s) + page content -->
+<div>
+  <button class="button" (click)="openBillBoard()">Bill Board</button>
+</div>
 <ng-sidebar-container style="height: 100vh;">
 
-	<ng-sidebar [(opened)]="isOpened" position="right">
+	<ng-sidebar [(opened)]="isOpened" mode="push"  position="left">
       <div class="load-item" id="{{val}}" *ngFor="let val of [1,2,3,4,5,6,7, 8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]; let i = index;" [draggable]="true" (dragstart)="drag($event, val)">
         Load-{{val}}
       </div>
   </ng-sidebar>
 
 
+
 <div  ng-sidebar-content>
-  <button class="button" (click)="openBillBoard()">Bill Board</button>
+  
+  <div style="width: 100%;">
   <table>
     <tr>
       <th>Driver-1</th>
@@ -23,6 +28,9 @@
       <th>Driver-8</th> 
       <th>Driver-9</th>
       <th>Driver-10</th>
+    
+
+
       
     </tr>
     <tr *ngFor="let x of [1,2,3,4,5,6,7,8,9,10]">
@@ -36,9 +44,11 @@
       <td (drop)="drop($event)" (dragover)="allowDrop($event)"></td>
       <td (drop)="drop($event)" (dragover)="allowDrop($event)"></td>
       <td (drop)="drop($event)" (dragover)="allowDrop($event)"></td>
+      
     </tr>
     
   </table>
+</div>
 </div>
 
 </ng-sidebar-container>

@@ -6,7 +6,7 @@
   }
 
   td {
-    width: 350px;
+    min-width: 200px;
     height: 70px;
     padding: 10px;
     border-left: 1px solid #aaaaaa;
@@ -14,7 +14,7 @@
   }
 
   th {
-    width: 350px;
+    min-width: 200px;
     height: 35px;
     padding: 10px;
     border-left: 1px solid #aaaaaa;
@@ -35,6 +35,7 @@
   }
 
   .button {
+    float: right;
     background-color: #4CAF50;
     border: none;
     color: white;
